@@ -15,7 +15,7 @@ repositories {
 dependencies {
     implementation("org.spigotmc:spigot-api:1.12.2-R0.1-SNAPSHOT")
     implementation("org.projectlombok:lombok:1.18.12")
-    implementation("com.github.zkingboos:UniversalWrapper:3.0.2")
+    implementation("com.github.zkingboos:UniversalWrapper:3.0.5-SNAPSHOT")
     implementation("com.github.SaiintBrisson:command-framework:master")
     implementation("mysql:mysql-connector-java:8.0.20")
 

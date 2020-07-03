@@ -6,15 +6,10 @@ import com.lorenzoog.tempmute.datasource.UserDao;
 import com.lorenzoog.tempmute.listener.PlayerListener;
 import dev.king.universal.UniversalWrapper;
 import dev.king.universal.api.JdbcProvider;
-import dev.king.universal.mysql.UniversalCredentials;
-import org.bukkit.Server;
+import dev.king.universal.api.mysql.UniversalCredentials;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
-
-import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 @SuppressWarnings("unused")
 public final class Main extends JavaPlugin {
@@ -49,8 +44,8 @@ public final class Main extends JavaPlugin {
     private JdbcProvider setupConnection() {
         FileConfiguration fileConfiguration = getConfig();
 
-        String host = fileConfiguration.getString("database.host", "localhost");
-        int port = fileConfiguration.getInt("database.port", 3306);
+        String host = fileConfiguration.getString("database.host");
+        int port = fileConfiguration.getInt("database.port");
 
         String fullHost = String.format("%s:%s", host, port);
 
