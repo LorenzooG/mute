@@ -1,0 +1,12 @@
+name: LorenzoMute
+version: 1.0.0
+main: com.lorenzoog.tempmute.Main
+commands:
+  mute:
+    usage: /mute <username>
+    permission: tempmute.mute
+    permission-message: §cYou don't have permission!
+  unmute:
+    usage: /unmute <username>
+    permission: tempmute.unmute
+    permission-message: §cYou don't have permission!

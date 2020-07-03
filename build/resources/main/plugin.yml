@@ -1,0 +1,6 @@
+name: LorenzoMute
+version: 1.0.0
+main: com.lorenzoog.tempmute.Main
+commands:
+  mute:
+  unmute:
