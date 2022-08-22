@@ -1,7 +1,7 @@
-package com.lorenzoog.tempmute.listener;
+package me.devgabi.tempmute.listener;
 
-import com.lorenzoog.tempmute.entity.User;
-import com.lorenzoog.tempmute.datasource.UserDao;
+import me.devgabi.tempmute.entity.User;
+import me.devgabi.tempmute.datasource.UserDao;
 import lombok.RequiredArgsConstructor;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -9,8 +9,6 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
-
-import java.util.Optional;
 
 @RequiredArgsConstructor
 public final class PlayerListener implements Listener {

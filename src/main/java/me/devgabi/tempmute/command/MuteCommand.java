@@ -1,14 +1,14 @@
-package com.lorenzoog.tempmute.command;
+package me.devgabi.tempmute.command;
 
-import com.lorenzoog.tempmute.datasource.UserDao;
-import com.lorenzoog.tempmute.entity.User;
+import me.devgabi.tempmute.datasource.UserDao;
+import me.devgabi.tempmute.entity.User;
 import lombok.RequiredArgsConstructor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 
 @RequiredArgsConstructor
-public final class UnmuteCommand implements CommandExecutor {
+public final class MuteCommand implements CommandExecutor {
 
     private final UserDao userDao;
 
@@ -24,14 +24,14 @@ public final class UnmuteCommand implements CommandExecutor {
         User user = userDao.findByName(username);
 
         if(user == null) {
-            sender.sendMessage("&cThe user don't exists in database!");
+            sender.sendMessage("§cThe user don't exists in database!");
 
             return true;
         }
 
-        userDao.updateUserEntity(username, false);
+        userDao.updateUserEntity(username, true);
 
-        sender.sendMessage(String.format("&aUser %s has been successfully unmuted", username));
+        sender.sendMessage(String.format("§aUser %s has been successfully muted", username));
 
         return true;
     }

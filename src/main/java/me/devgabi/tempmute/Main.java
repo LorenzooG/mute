@@ -1,9 +1,9 @@
-package com.lorenzoog.tempmute;
+package me.devgabi.tempmute;
 
-import com.lorenzoog.tempmute.command.MuteCommand;
-import com.lorenzoog.tempmute.command.UnmuteCommand;
-import com.lorenzoog.tempmute.datasource.UserDao;
-import com.lorenzoog.tempmute.listener.PlayerListener;
+import me.devgabi.tempmute.command.MuteCommand;
+import me.devgabi.tempmute.command.UnmuteCommand;
+import me.devgabi.tempmute.datasource.UserDao;
+import me.devgabi.tempmute.listener.PlayerListener;
 import dev.king.universal.UniversalWrapper;
 import dev.king.universal.api.JdbcProvider;
 import dev.king.universal.api.mysql.UniversalCredentials;

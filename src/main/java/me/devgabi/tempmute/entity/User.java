@@ -1,4 +1,4 @@
-package com.lorenzoog.tempmute.entity;
+package me.devgabi.tempmute.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

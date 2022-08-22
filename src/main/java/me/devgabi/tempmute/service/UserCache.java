@@ -1,6 +1,6 @@
-package com.lorenzoog.tempmute.service;
+package me.devgabi.tempmute.service;
 
-import com.lorenzoog.tempmute.entity.User;
+import me.devgabi.tempmute.entity.User;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

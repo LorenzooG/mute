@@ -1,12 +1,10 @@
-package com.lorenzoog.tempmute.datasource;
+package me.devgabi.tempmute.datasource;
 
-import com.lorenzoog.tempmute.entity.User;
-import com.lorenzoog.tempmute.service.UserCache;
+import me.devgabi.tempmute.entity.User;
+import me.devgabi.tempmute.service.UserCache;
 import dev.king.universal.api.JdbcProvider;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
-
-import java.util.Optional;
 
 @RequiredArgsConstructor
 public final class UserDao {

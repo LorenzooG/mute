@@ -1,6 +1,6 @@
-name: LorenzoMute
+name: GabiMute
 version: 1.0.0
-main: com.lorenzoog.tempmute.Main
+main: me.devgabi.tempmute.Main
 commands:
   mute:
     usage: /mute <username>
